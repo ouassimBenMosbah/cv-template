@@ -1,14 +1,14 @@
-.contact{
-    font-weight: 600;
+.contact {
+  display: flex;
+  margin: 0.9rem 0;
 
-    &__title{
-        margin-top: 0.8333rem;
-        margin-bottom: 0.125rem;
-        color: rgba($greyLight, .8);
-        font-weight: 500;
-    }
+  &__class {
+    align-self: flex-end;
+    margin: 0 0.3rem 0 0;
+  }
 
-    &__data{
-        line-height: 0.75rem;
-    }
+  &__data {
+    width: 100%;
+    line-height: 0.75rem;
+  }
 }

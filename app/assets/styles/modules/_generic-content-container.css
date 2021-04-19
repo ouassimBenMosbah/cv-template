@@ -1,6 +1,7 @@
-.generic-content-container{
-    &__highlight{
-        font-weight: 500;
-        font-style: italic;
-    }
+.generic-content-container {
+  font-size: 9px;
+  &__highlight {
+    font-weight: 500;
+    font-style: italic;
+  }
 }

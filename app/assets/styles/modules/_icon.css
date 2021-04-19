@@ -10,28 +10,28 @@
   width: 0.45833333699999995rem;
   height: 0.45833333699999995rem;
 }
-.icon--compass {
-  background-image: url("../images/icons/compass.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
+.icon--email {
+  background-image: url("../images/icons/email.svg");
+  width: 0.500000004rem;
+  height: 0.500000004rem;
 }
 .icon--github-logo {
   background-image: url("../images/icons/github-logo.svg");
   width: 0.500000004rem;
   height: 0.500000004rem;
 }
-.icon--game-controller {
-  background-image: url("../images/icons/game-controller.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
+.icon--linkedin {
+  background-image: url("../images/icons/linkedin.svg");
+  width: 0.666666672rem;
+  height: 0.666666672rem;
 }
-.icon--saddle {
-  background-image: url("../images/icons/saddle.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
+.icon--phone {
+  background-image: url("../images/icons/phone.svg");
+  width: 0.666666672rem;
+  height: 0.666666672rem;
 }
-.icon--terminal {
-  background-image: url("../images/icons/terminal.svg");
-  width: 1.6666666799999998rem;
-  height: 1.6666666799999998rem;
+.icon--tennis {
+  background-image: url("../images/icons/tennis.svg");
+  width: 21.333333504rem;
+  height: 21.333333504rem;
 }

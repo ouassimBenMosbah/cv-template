@@ -1,173 +1,190 @@
-var dateformat = require("dateformat");
+var dateformat = require('dateformat');
 
-var date = dateformat(new Date(), 'dd.mm.yyyy');
+var date = dateformat(new Date(), 'dd/mm/yyyy');
 
 module.exports = {
-    document: {
-        title: "Bernard Keen"
+  document: {
+    title: 'Ouassim BEN MOSBAH',
+  },
+  header: {
+    github: {
+      caption: `github.com/ouassimBenMosbah`,
+      link: 'https://github.com/ouassimBenMosbah',
     },
-    header: {
-        github:{
-            caption: `github.com/frontant/cv-template`,
-            link: 'https://github.com/frontant/cv-template'
-        },
-        date: 'City, ' + date
+  },
+  contact: {
+    title: 'Contact',
+    item1: {
+      class: 'icon--phone',
+      data: '06 26 74 08 55',
     },
-    contact: {
-        title: 'Contact',
-        item1: {
-            caption: 'Mobile',
-            data: '+123 45 67 89 00'
-        },
-        item2: {
-            caption: 'E-Mail',
-            data: '<a href="mailto:bernard.keen@example.com?subject=Request">bernard.keen@example.com</a>'
-        },
-        item3: {
-            caption: 'Websites',
-            data: `<a href="https://github.com" target="_blank">https://github.com</a>`
-        },
-        item4: {
-            caption: 'Address',
-            data: `Example Street<br>12345 City`
-        }
+    item2: {
+      class: 'icon--email',
+      data:
+        '<a href="mailto:ouassim.benmosbah@gmail.com?subject=Recrutement">ouassim.benmosbah@gmail.com</a>',
     },
-    skills: {
-        title: 'Skills',
-        item1:{
-            subject: 'Html',
-            mark: 'skills__item-bar--very-good'
-        },
-        item2:{
-            subject: 'Css',
-            mark: 'skills__item-bar--good'
-        },
-        item3:{
-            subject: 'Photoshop',
-            mark: 'skills__item-bar--average'
-        },
-        item4:{
-            subject: 'Javascript',
-            mark: 'skills__item-bar--very-good'
-        },
-        item5:{
-            subject: 'Php',
-            mark: 'skills__item-bar--average'
-        },
-        item6:{
-            subject: 'Git',
-            mark: 'skills__item-bar--good'
-        }
+    item3: {
+      class: 'icon--github-logo',
+      data: `<a href="https://github.com/ouassimBenMosbah" target="_blank">github.com/ouassimBenMosbah</a>`,
     },
-    lang: {
-        title: 'Languages',
-        data: {
-            lang1: {
-                caption: 'English',
-                level: 'Mother tongue'
-            },
-            lang2: {
-                caption: 'German',
-                level: 'Full professional proficiency'
-            },
-            lang3: {
-                caption: 'Spanish',
-                level: 'Basic knowledge'
-            }
-        }
+    item4: {
+      class: 'icon--linkedin',
+      data: `<a href="https://www.linkedin.com/in/ouassim-ben-mosbah/" target="_blank">linkedin.com/in/ouassim-ben-mosbah/</a>`,
     },
-    aboutMe: {
-        firstName: 'Bernard',
-        lastName: 'Keen',
-        position: 'Web Developer',
-        summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Id non, fugit saepe reiciendis cumque sit magnam officiis veniam
-        iusto <span class='generic-content-container__highlight'>voluptatum</span>
-        aut dolores <span class='generic-content-container__highlight'>perspiciatis</span>
-        autem <span class='generic-content-container__highlight'>sapiente</span>
-        totam, reprehenderit, vero sunt culpa!`
+  },
+  skill: {
+    title: 'Compétences',
+    data: {
+      skill1: {
+        title: `Programmation`,
+        labels: `Angular 2+, NestJS, Node.js, Sequelize, TypeORM, Typescript, Ngrx, Ag-grid`,
+      },
+      skill2: {
+        title: `Gestion de projet`,
+        labels: `Méthodes agiles, jira, trello`,
+      },
+      skill3: {
+        title: `Soft skills`,
+        labels: `Capacité d'intégration, Force de proposition, Gestion d'équipe, Formation des collaborateurs`,
+      },
     },
-    experience:{
-        title : 'Experience',
-        item1: {
-            period: {
-                start: 2017,
-                end: 2018,
-            },
-            location: 'Sydney, AU',
-            firm: 'Ino-Tech Ficional ',
-            position: 'Junior Web Front End Developer',
-            summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Id non, fugit saepe reiciendis cumque sit magnam officiis veniam.`
-        },
-        item2: {
-            period: {
-                start: 2016,
-                end: 2017,
-            },
-            location: 'San José, US',
-            firm: 'Ficional Teco',
-            position: 'Junor UX Developer',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae porro
-            nulla fugit quidem amet tenetur neque beatae?`
-        },
-        item3: {
-            period: {
-                start: 2016,
-                end: 2013,
-            },
-            location: 'Berlin, DE',
-            firm: 'Audi AG',
-            position: 'Student Employee',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae porro
-            nulla fugit quidem amet.`
-        }
+  },
+  lang: {
+    title: 'Langues',
+    data: {
+      lang1: {
+        caption: 'Français',
+        level: 'Langue maternelle',
+      },
+      lang2: {
+        caption: 'Anglais',
+        level: 'C1, TOEIC (930/990)',
+      },
+      lang3: {
+        caption: 'Arabe',
+        level: 'Langue maternelle',
+      },
     },
-    education: {
-        title: 'Education',
-        item1: {
-            period: {
-                start: 2011,
-                end: 2013,
-            },
-            location: 'Munich, DE',
-            school: 'Munich University of Applied Sciences',
-            degree: 'M.B.A. WebDevelopment',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae
-            porro nulla fugit quidem.`
-        },
-        item2: {
-            period: {
-                start: 2005,
-                end: 2011,
-            },
-            location: 'Munich, DE',
-            school: 'Advancement of Science And Art',
-            degree: 'B.Sc. Creative Arts',
-            summary: `Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Quam, incidunt perspiciatis, esse eos asperiores repudiandae.`
-        }
+  },
+  interests: {
+    title: "Centres d'intêrets",
+    data: {
+      interest1: {
+        caption: 'Voyages',
+      },
+      interest2: {
+        caption: 'Sport',
+      },
+      interest3: {
+        caption: 'Nouvelles technologies',
+      },
     },
-    interests: {
-        title: 'Interests',
-        item1: {
-            icon: 'icon--terminal',
-            caption: 'Coding'
-        },
-        item2: {
-            icon: 'icon--game-controller',
-            caption: 'Games'
-        },
-        item3: {
-            icon: 'icon--compass',
-            caption: 'Hiking'
-        },
-        item4: {
-            icon: 'icon--saddle',
-            caption: 'Cycling'
-        }
-    }
+  },
+  aboutMe: {
+    firstName: 'Ouassim',
+    lastName: 'Ben Mosbah',
+    position: 'Développeur fullstack',
+  },
+  experience: {
+    title: 'Expérience',
+    item1: {
+      period: {
+        start: 2018,
+        end: 'Auj.',
+      },
+      location: 'Lyon, France',
+      firm: 'CELLANCE',
+      position: 'Développeur full stack',
+      summary: `- Développements d'applications web. Participation aux processus de définition des besoins fonctionnels et des choix technologiques des applications.<br/><br/>
+      - Participation active auprès des clients. Formation technique d'équipe. Aide à la gestion de l'équipe en préparant les sprints, le backlog, les revues de sprints et les entretiens d'embauches.<br/><br/>
+      <b>Technologies utilisés:</b> <i>Angular 2+, Typescript, ngrx, Material, Cypress, Ag-grid, Nest, Node.js, Sequelize, TypeORM, MySQL, passport</i>`,
+    },
+    item2: {
+      period: {
+        start: '02/2018',
+        end: '08/2018',
+      },
+      location: 'Lyon, France',
+      firm: 'CELLANCE',
+      position: 'Stage développeur web',
+      summary: `- Développement d'applications de gestion de projets immobiliers et de logistique pour une entreprise d'entreposage<br/><br/>
+      - Travail en méthode agile<br/><br/>
+      <b>Technologies utilisés:</b> <i>Angular 2+, Typescript, ngrx, Material, Node.js, Sequelize, MySQL</i>`,
+    },
+    item3: {
+      period: {
+        start: '06/2017',
+        end: '07/2017',
+      },
+      location: 'Montpellier, France',
+      firm: 'LIRMM',
+      position: 'Stage développeur',
+      summary: `Conception et développement d’une interface de saisie des spécifications et génération automatique de la documentation.<br/><br/>
+      <b>Technologies utilisés:</b> <i>Java, VBA</i>`,
+    },
+  },
+  education: {
+    title: 'Formation',
+    item1: {
+      period: {
+        start: 2014,
+        end: 2018,
+      },
+      location: 'Montpellier, France',
+      school: 'Polytech Montpellier',
+      degree: 'Ingénieur en informatique et gestion',
+      summary: null,
+    },
+    item2: {
+      period: {
+        start: 2017,
+        end: 2018,
+      },
+      location: 'Montpellier, France',
+      school: 'Université de Montpellier',
+      degree: 'Master en système d’information économique et financier',
+      summary: null,
+    },
+    item3: {
+      period: {
+        start: 2012,
+        end: 2014,
+      },
+      location: 'Nice, France',
+      school: 'Université de Nice Sophia Antipolis',
+      degree: 'Licence en informatique',
+      summary: null,
+    },
+    item4: {
+      period: {
+        start: 2011,
+        end: 2012,
+      },
+      location: 'Tunis, Tunisie',
+      school: 'Lycée français Pierre Mendès France',
+      degree: 'Baccalauréat scientifique',
+      summary: null,
+    },
+  },
+  project: {
+    title: 'Projets',
+    item1: {
+      name: 'Short reckonings (tricount like)',
+      summary: `
+          <b><i>Angular 2+, Typescript, Algorithmique</i></b>
+        `,
+    },
+    item2: {
+      name: 'SMS analysis',
+      summary: `
+          <b><i>Python 3, Natural Processing Language (NPL), Sentiment analysis</i></b>
+      `,
+    },
+    item3: {
+      name: 'Prello (trello like)',
+      summary: `
+          <b><i>React, OAuth2, Node, Express, MongoDB</i></b>
+      `,
+    },
+  },
 };

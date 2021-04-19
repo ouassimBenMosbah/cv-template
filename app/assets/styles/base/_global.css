@@ -1,27 +1,27 @@
-html{
-    background-color: rgb(200, 200, 200);
-    transform: scale($pageZoom);
-    transform-origin: 50% 0;
+html {
+  background-color: rgb(200, 200, 200);
+  transform: scale($pageZoom);
+  transform-origin: 50% 0;
 }
 
-body{
-    border: $pageBorder solid #fff;
-    width: $pageWidth;
-    height: $pageHeight;
-    margin: 0 auto;
-    background-color: #fff;
-    font-family: "Raleway";
-    font-weight: 400;
-    font-size: 0.5833rem;
-    box-sizing: content-box;
+body {
+  border: $pageBorder solid #fff;
+  width: $pageWidth;
+  height: $pageHeight;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 0.5833rem;
+  box-sizing: content-box;
 }
 
-a{
-    color: $greyLight;    
-    text-decoration: none;
+a {
+  color: $greyLight;
+  text-decoration: none;
 }
 
-*{
-    box-sizing: border-box;
-    position: relative;
+* {
+  box-sizing: border-box;
+  position: relative;
 }

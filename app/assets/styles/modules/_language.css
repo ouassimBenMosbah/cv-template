@@ -1,15 +1,13 @@
-.language{
-    margin: 0.20833rem 0;
+.language {
+  margin: 0.5rem 0rem 0.5rem 0.2rem;
 
-    &__label{
-        font-weight: 600;
-        text-transform: uppercase;
-    }
+  &__label {
+    font-weight: 600;
+  }
 
-    &__level{
-        margin-left: 0.125rem;
-        font-style: italic;
-        font-weight: 500;
-        color: rgba($greyLight, .8);
-    }
+  &__level {
+    margin-left: 0.125rem;
+    font-weight: 500;
+    color: rgba($greyLight, 0.8);
+  }
 }

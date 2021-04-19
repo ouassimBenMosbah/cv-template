@@ -1,24 +1,23 @@
-.about-me{
-    height: 8.875rem;
+.about-me {
+  height: 3rem;
 
-    &__title{
-        font-size: 1.41667rem;
-        font-weight: 800;
-        text-transform: uppercase;
-        margin: 0 0 0.16667rem 0;
-        padding-top: 1.45833rem;
-    }
+  &__title {
+    font-size: 1.41667rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin: 0 0 0.16667rem 0;
+  }
 
-    &__subtitle{
-        font-size: 0.83333rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: $blueLight;
-        margin: 0 0 0.83333rem 0;
-        word-spacing: .06rem;
-    }
+  &__subtitle {
+    font-size: 0.83333rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $blueLight;
+    margin: 0 0 0.83333rem 0;
+    word-spacing: 0.06rem;
+  }
 
-    &__content{
-        line-height: 1.4em;
-    }
+  &__content {
+    line-height: 1.4em;
+  }
 }
